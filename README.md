@@ -1,46 +1,42 @@
-# [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coverage-image]][coverage-url]
+# Web development Convention
 
-> [conventional-changelog](https://github.com/ajoslin/conventional-changelog) [angular](https://github.com/angular/angular) preset
+<!-- Angular's [commit message guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit). -->
 
-**Issues with the convention itself should be reported on the Angular issue tracker.**
+## About this preset
 
-## Angular Convention
+This preset is based on [conventional-changelog-angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular). The main goal of this is to optimize semantics for web development.
 
-Angular's [commit message guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit).
+| Note |
+| --- |
+| This preset is still `WIP`. Any ideas, commits, and suggestions are welcome.  |
 
-### Examples
+## Examples
 
-Appears under "Features" header, pencil subheader:
+| Tag | Description | Example | Version |
+| --- | --- | --- | --- |
+| `feat` | New features or functionality | `feat: account recovery form` | #.X.# |
+| `fix` | Bug fixes and issue resolution | `fix: pagination next page link in blog feed` |  #.X.# |
+| `improve` | Code improvements, refactoring, or formatting changes | `improve: extend navigation to reduce user fraction` | #.X.# |
+| `docs` | Documentation | `docs: explain recommend system` | #.X.# |
+| `test` | Test-related changes | `test: display error after wrong email input` |  #.X.# |
+| `trivial` | Routine tasks or non-functional updates | `trivial: remove unused imports` |  #.X.# |
+| `deps` | Dependency updates and management | `deps: bump sveltekit version to latest` |  #.X.# |
+| `i18n` | Internationalization and localization | `i18n: add Polish translations` |  #.X.# |
+| `security` | Security-related changes | `security: test password against hibp` |  #.X.# |
+| `seo` | SEO-related improvements and optimizations | `seo: structured data for contact page` |  #.X.# |
 
-```
-feat(pencil): add 'graphiteWidth' option
-```
+<!-- KEY UPDATE: BREAKING CHANGES but from the business point of view. -->
+<!-- ``` -->
 
-Appears under "Bug Fixes" header, graphite subheader, with a link to issue #28:
+<!-- The following commit and commit `667ecc1` do not appear in the changelog if they are under the same release. If not, the revert commit appears under the "Reverts" header. -->
 
-```
-fix(graphite): stop graphite breaking when width < 0.1
+<!-- ``` -->
+<!-- revert: feat(pencil): add 'graphiteWidth' option
 
-Closes #28
-```
+This reverts commit 667ecc1654a317a13331b17617d973392f415f02. -->
+<!-- ``` -->
 
-Appears under "Performance Improvements" header, and under "Breaking Changes" with the breaking change explanation:
-
-```
-perf(pencil): remove graphiteWidth option
-
-BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite width of 10mm is always used for performance reason.
-```
-
-The following commit and commit `667ecc1` do not appear in the changelog if they are under the same release. If not, the revert commit appears under the "Reverts" header.
-
-```
-revert: feat(pencil): add 'graphiteWidth' option
-
-This reverts commit 667ecc1654a317a13331b17617d973392f415f02.
-```
-
-### Commit Message Format
+## Commit Message Format
 
 A commit message consists of a **header**, **body** and **footer**.  The header has a **type**, **scope** and **subject**:
 
@@ -54,11 +50,11 @@ A commit message consists of a **header**, **body** and **footer**.  The header 
 
 The **header** is mandatory and the **scope** of the header is optional.
 
-### Revert
+## Revert
 
-If the commit reverts a previous commit, it should begin with `revert: `, followed by the header of the reverted commit. In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
+If the commit reverts a previous commit, it should begin with `revert:`, followed by the header of the reverted commit. In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
 
-### Type
+## Type
 
 If the prefix is `feat`, `fix` or `perf`, it will appear in the changelog. However if there is any [BREAKING CHANGE](#footer), the commit will always appear in the changelog.
 
@@ -66,12 +62,12 @@ Other prefixes are up to your discretion. Suggested prefixes are `build`, `ci`, 
 
 Details regarding these types can be found in the official [Angular Contributing Guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#type).
 
-### Scope
+## Scope
 
 The scope could be anything specifying place of the commit change. For example `$location`,
 `$browser`, `$compile`, `$rootScope`, `ngHref`, `ngClick`, `ngView`, etc...
 
-### Subject
+## Subject
 
 The subject contains succinct description of the change:
 
@@ -79,12 +75,12 @@ The subject contains succinct description of the change:
 * don't capitalize first letter
 * no dot (.) at the end
 
-### Body
+## Body
 
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
 The body should include the motivation for the change and contrast this with previous behavior.
 
-### Footer
+## Footer
 
 The footer should contain any information about **Breaking Changes** and is also the place to
 reference GitHub issues that this commit **Closes**.
@@ -93,12 +89,3 @@ reference GitHub issues that this commit **Closes**.
 
 A detailed explanation can be found in this [document](#commit-message-format).
 
-[npm-image]: https://badge.fury.io/js/conventional-changelog-angular.svg
-[npm-url]: https://npmjs.org/package/conventional-changelog-angular
-[travis-image]: https://travis-ci.org/conventional-changelog/conventional-changelog-angular.svg?branch=master
-[travis-url]: https://travis-ci.org/conventional-changelog/conventional-changelog-angular
-[daviddm-image]: https://david-dm.org/conventional-changelog/conventional-changelog-angular.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/conventional-changelog/conventional-changelog-angular
-[coverage-image]: https://coveralls.io/repos/github/conventional-changelog/conventional-changelog/badge.svg?branch=master
-[coverage-url]: https://coveralls.io/github/conventional-changelog/conventional-changelog?branch=master
-[commit-message-format]: https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#
