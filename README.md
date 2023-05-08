@@ -12,29 +12,29 @@ This preset is based on [conventional-changelog-angular](https://github.com/conv
 
 ## Convention
 
-| Type | Tag | Description | Example | Version |
-| --- | --- | --- | --- | --- |
+| Type | Tag | Description | Example |
+| --- | --- | --- | --- | 
 | MAJOR |
-| | `KEY-UPDATE` | Key updates from the business point of view [extraordinary update] | **KEY-UPDATE**: rebrand `2023` | 1.x.x |
-| | `BREAK-UPDATE` | Breaking update    | **BREAK-UPDATE**: move from `next.js` to `sveltekit` | 1.x.x |
+| 1.x.x | `KEY-UPDATE` | Key updates from the business point of view [extraordinary update] | **KEY-UPDATE**: rebrand `2023` | 
+| 1.x.x | `BREAK-UPDATE` | Breaking update    | **BREAK-UPDATE**: move from `next.js` to `sveltekit` | 
 | MINOR |
-| | `new` | New feature, functionality, component, integration or subpage, etc. | **new**: account recovery `form` | x.1.x |
-| | `update` | Significant update of feature, functionality, component or subpage, etc. | **update**: move from `paypal` to `stripe` | x.1.x |
-| | `init` | Tag for first, initial commit to bump version to `0.1.0` [one time use] | **init**: repo setup | x.1.x |
+| x.1.x | `new` | New feature, functionality, component, integration or subpage, etc. | **new**: account recovery `form`  |
+| x.1.x | `update` | Significant update of feature, functionality, component or subpage, etc. | **update**: move from `paypal` to `stripe` |
+| x.1.x | `init` | Tag for first, initial commit to bump version to `0.1.0` [one time use] | **init**: repo setup | 
 | PATCH |
-| | `fix` | Bug fixes and issue resolution | **fix**: pagination `next page` link in blog feed | x.x.1 |
-| | `security` | Security-related changes | **security**: test password against `hibp` |  x.x.1 |
-| | `improve` | Code improvements, refactoring, or formatting changes [common commit] | **improve**: extend navigation to reduce user fraction | x.x.1 |
-| | `i18n` | Internationalization and localization | **i18n**: add `polish` translation |  x.x.1 |
-| | `a11y` | Accessibility improvments | **a11y**: increase contrast ratio for `AA` rating |  x.x.1 |
-| | `seo` | SEO-related improvements and optimizations | **seo**: structured data for `contact page` | x.x.1 |
-| | `visual` | All visual changes, CSS, animations, etc. | **visual**: change navbar from `static` to `fixed` | x.x.1 |
+| x.x.1 | `fix` | Bug fixes and issue resolution | **fix**: pagination `next page` link in blog feed | 
+| x.x.1 | `security` | Security-related changes | **security**: test password against `hibp` | 
+| x.x.1 | `improve` | Code improvements, refactoring, or formatting changes [common commit] | **improve**: extend navigation to reduce user fraction | 
+| x.x.1 | `i18n` | Internationalization and localization | **i18n**: add `polish` translation | 
+| x.x.1 | `a11y` | Accessibility improvments | **a11y**: increase contrast ratio for `AA` rating |  
+| x.x.1 | `seo` | SEO-related improvements and optimizations | **seo**: structured data for `contact page` |
+| x.x.1 | `visual` | All visual changes, CSS, animations, etc. | **visual**: change navbar from `static` to `fixed` | 
 | SKIP |
-| | `trivial` | Small changes, not worth noting  | trivial: remove unused imports | SKIP |
-| | `test` | Test-related changes | test: display error after wrong `email input` | SKIP |
-| | `deps` | Dependency updates and management | deps: bump `sveltekit` version to latest |  SKIP |
-| | `docs` | Documentation & Guides | docs: explain recommend system | SKIP |
-| | `ops` | Operational changes, `CI`, etc. | ops: configure preview on `beta` branch | SKIP |
+| SKIP | `trivial` | Small changes, not worth noting  | trivial: remove unused imports | 
+| SKIP | `test` | Test-related changes | test: display error after wrong `email input` |
+| SKIP | `deps` | Dependency updates and management | deps: bump `sveltekit` version to latest |
+| SKIP | `docs` | Documentation & Guides | docs: explain recommend system | 
+| SKIP | `ops` | Operational changes, `CI`, etc. | ops: configure preview on `beta` branch | 
 
 <!-- KEY UPDATE: BREAKING CHANGES but from the business point of view. -->
 <!-- ``` -->
