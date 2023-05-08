@@ -30,11 +30,11 @@ This preset is based on [conventional-changelog-angular](https://github.com/conv
 | | `seo` | SEO-related improvements and optimizations | **seo**: structured data for `contact page` | x.x.1 |
 | | `visual` | All visual changes, CSS, animations, etc. | **visual**: change navbar from `static` to `fixed` | x.x.1 |
 | SKIP |
-| | `trivial` | Small changes, not worth noting  | trivial: remove unused imports | SKIPPED |
-| | `test` | Test-related changes | test: display error after wrong `email input` | SKIPPED |
-| | `deps` | Dependency updates and management | deps: bump `sveltekit` version to latest |  SKIPPED |
-| | `docs` | Documentation & Guides | docs: explain recommend system | SKIPPED |
-| | `ops` | Operational changes, `CI`, etc. | ops: configure preview on `beta` branch | SKIPPED
+| | `trivial` | Small changes, not worth noting  | trivial: remove unused imports | SKIP |
+| | `test` | Test-related changes | test: display error after wrong `email input` | SKIP |
+| | `deps` | Dependency updates and management | deps: bump `sveltekit` version to latest |  SKIP |
+| | `docs` | Documentation & Guides | docs: explain recommend system | SKIP |
+| | `ops` | Operational changes, `CI`, etc. | ops: configure preview on `beta` branch | SKIP |
 
 <!-- KEY UPDATE: BREAKING CHANGES but from the business point of view. -->
 <!-- ``` -->
