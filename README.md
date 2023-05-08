@@ -1,4 +1,4 @@
-# Web development Convention
+# Conventional Changelog optimized for Web Development
 
 <!-- Angular's [commit message guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit). -->
 
@@ -10,20 +10,31 @@ This preset is based on [conventional-changelog-angular](https://github.com/conv
 | --- |
 | This preset is still `WIP`. Any ideas, commits, and suggestions are welcome.  |
 
-## Examples
+## Convention
 
-| Tag | Description | Example | Version |
-| --- | --- | --- | --- |
-| `feat` | New features or functionality | `feat: account recovery form` | #.X.# |
-| `fix` | Bug fixes and issue resolution | `fix: pagination next page link in blog feed` |  #.X.# |
-| `improve` | Code improvements, refactoring, or formatting changes | `improve: extend navigation to reduce user fraction` | #.X.# |
-| `docs` | Documentation | `docs: explain recommend system` | #.X.# |
-| `test` | Test-related changes | `test: display error after wrong email input` |  #.X.# |
-| `trivial` | Routine tasks or non-functional updates | `trivial: remove unused imports` |  #.X.# |
-| `deps` | Dependency updates and management | `deps: bump sveltekit version to latest` |  #.X.# |
-| `i18n` | Internationalization and localization | `i18n: add Polish translations` |  #.X.# |
-| `security` | Security-related changes | `security: test password against hibp` |  #.X.# |
-| `seo` | SEO-related improvements and optimizations | `seo: structured data for contact page` |  #.X.# |
+| Type | Tag | Description | Example | Version |
+| --- | --- | --- | --- | --- |
+| MAJOR |
+| | `KEY-UPDATE` | Key updates from the business point of view [extraordinary update] | **KEY-UPDATE**: rebranding `2023` | 1.x.x |
+| | `BREAK-UPDATE` | Breaking update    | **BREAK-UPDATE**: move from `next.js` to `sveltekit` | 1.x.x |
+| MINOR |
+| | `new` | New feature, functionality, component, integration or subpage, etc. | **new**: account recovery `form` | x.1.x |
+| | `update` | Significant update of feature, functionality, component or subpage, etc. | **update**: move from `paypal` to `stripe` | x.1.x |
+| | `init` | Tag for first, initial commit to bump version to `0.1.0` [one time use] | **init**: repo setup | x.1.x |
+| PATCH |
+| | `fix` | Bug fixes and issue resolution | **fix**: pagination `next page` link in blog feed | x.x.1 |
+| | `security` | Security-related changes | **security**: test password against `hibp` |  x.x.1 |
+| | `improve` | Code improvements, refactoring, or formatting changes [common commit] | **improve**: extend navigation to reduce user fraction | x.x.1 |
+| | `i18n` | Internationalization and localization | **i18n**: add `polish` translations |  x.x.1 |
+| | `a11y` | Accessibility improvments | **a11y**: increase contrast ratio for `AA` rating |  x.x.1 |
+| | `seo` | SEO-related improvements and optimizations | **seo**: structured data for `contact page` | x.x.1 |
+| | `visual` | All visual changes, CSS, animations, etc. | **visual**: change navbar from `static` to `fixed` | x.x.1 |
+| SKIP |
+| | `trivial` | Small changes, not worth noting  | trivial: remove unused imports | SKIPPED |
+| | `test` | Test-related changes | test: display error after wrong `email input` | SKIPPED |
+| | `deps` | Dependency updates and management | deps: bump `sveltekit` version to latest |  SKIPPED |
+| | `docs` | Documentation & Guides | docs: explain recommend system | SKIPPED |
+| | `ops` | Operational changes, `CI`, etc. | ops: configure preview on `beta` branch | SKIPPED
 
 <!-- KEY UPDATE: BREAKING CHANGES but from the business point of view. -->
 <!-- ``` -->
