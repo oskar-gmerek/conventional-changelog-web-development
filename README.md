@@ -35,6 +35,7 @@ This preset is based on [conventional-changelog-angular](https://github.com/conv
 | SKIP | `deps` | Dependency updates and management | deps: bump `sveltekit` version to latest |
 | SKIP | `docs` | Documentation & Guides | docs: explain recommend system | 
 | SKIP | `ops` | Operational changes, `CI`, etc. | ops: configure preview on `beta` branch | 
+| SKIP | `asset` | Upload of static assets: images, videos, icons, etc  | asset: github svg icon | 
 
 <!-- KEY UPDATE: BREAKING CHANGES but from the business point of view. -->
 <!-- ``` -->
