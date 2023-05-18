@@ -8,7 +8,7 @@ This preset is based on [conventional-changelog-angular](https://github.com/conv
 
 | Note |
 | --- |
-| This preset is still `WIP`. Any ideas, commits, and suggestions are welcome.  |
+| This preset is still `WIP`. Any ideas, commits, and suggestions are **very welcome**.  |
 
 ## Convention
 
